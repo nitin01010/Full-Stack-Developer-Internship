@@ -23,7 +23,7 @@ function App() {
       setMovieData(null);
 
       const res = await fetch(
-        `http://localhost:5000/api/movies/${movieId}`
+        `https://full-stack-developer-internship-backend.onrender.com/api/movies/${movieId}`
       );
 
       if (!res.ok) {
@@ -49,7 +49,7 @@ function App() {
   const handleAISummary = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5000/api/movies/ai-summary",
+        "https://full-stack-developer-internship-backend.onrender.com/api/movies/ai-summary",
         {
           method: "POST",
           headers: {
